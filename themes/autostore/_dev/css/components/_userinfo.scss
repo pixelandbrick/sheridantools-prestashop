@@ -1,0 +1,31 @@
+@import "~bootstrap/scss/_mixins.scss";
+@import "../partials/_variables";
+
+@include media-breakpoint-up(lg) {
+	.header_user_info {
+		.header_user_info__list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		a {
+			padding: 0 18px 0 18px;
+			display: flex;
+			align-items: center;
+		}
+		i {
+			font-size: 18px;
+			margin-right: 8px;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	#_mobile_user_info {
+		flex: 1 0 0;
+		margin-right: 10px;
+	}
+}
+@include media-breakpoint-down(xs) {
+	#_mobile_user_info {
+		margin-right: 7px;
+	}
+}

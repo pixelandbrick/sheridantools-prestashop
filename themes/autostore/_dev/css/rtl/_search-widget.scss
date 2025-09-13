@@ -1,0 +1,27 @@
+//search
+@include media-breakpoint-up(lg) {
+    .lang-rtl {
+        #header {
+            .search-bar__text {
+                padding: 0 8px 0 0;
+            }
+            .search-close {
+                right: auto;
+                left: -5px;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .lang-rtl {
+        .search-bar {
+            .search-bar__wrap {
+                padding: 0 15px 0 38px;
+            }
+            .search-bar__btn {
+                right: auto;
+                left: 0;
+            }
+        }
+    }
+}

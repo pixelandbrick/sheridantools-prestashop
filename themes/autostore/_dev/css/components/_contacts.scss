@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/_mixins.scss";
+@import "../partials/_variables";
+
+.block-contact {
+	li {
+		position: relative;
+		padding-left: 32px;
+		&:before {
+			display: inline-block;
+			font-family: $second-icon-font;
+			font-size: 19px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			line-height: 1.9;
+		}
+	}
+	.item-address {
+		&:before {
+			content: '\49';
+		}
+	}
+	.e-mail {
+		&:before {
+			content: '\33';
+		}
+	}
+	.phone {
+		&:before {
+			content: '\48';
+		}
+	}
+}

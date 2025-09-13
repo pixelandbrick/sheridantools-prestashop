@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/_mixins.scss";
+@import "../partials/_variables";
+
+@include media-breakpoint-up(lg) {
+	#facebook_block {
+	}
+}
+@include media-breakpoint-down(md) {
+	#facebook_block {
+		.fb_iframe_widget {
+			margin: 0 -5px;
+		}
+	}
+}

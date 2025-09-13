@@ -1,0 +1,36 @@
+@include media-breakpoint-up(lg) {
+	#_desktop_contact_link{
+		.header__contact {
+			&__item{
+				display: inline-block;
+			    padding: 0 18px;
+			    border-right: 1px solid rgba($white, .2);
+			    &:first-child {
+			    	border-left: 1px solid rgba($white, .2);
+			    }
+				i {
+					font-size: 18px;
+					margin-right: 8px;
+				}
+			}
+		}
+		.header__contact__list {
+			display: flex;
+		}
+		.header__contact__item {
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	#_mobile_contact_link {
+		flex: 1 0 0;
+		margin-right: 10px;
+	}
+}
+@include media-breakpoint-down(xs) {
+	#_mobile_contact_link {
+		margin-right: 7px;
+	}
+}

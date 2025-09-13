@@ -1,0 +1,17 @@
+{shop_url}
+
+Bericht van een {shop_name} klant
+
+Customer Email Address: {email}
+
+Order ID #:  {order_name}
+
+Bijlage: {attached_file}
+
+Klantbericht:
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)

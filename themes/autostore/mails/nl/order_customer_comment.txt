@@ -1,0 +1,17 @@
+{shop_url}
+
+Hallo {firstname} {lastname},
+
+Message from customer
+
+U heeft een bericht ontvangen betreffende een bestelling met de referentie: {order_name}.
+
+Klant: {firstrname} {lastname} ({email})
+
+Klantbericht:
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)

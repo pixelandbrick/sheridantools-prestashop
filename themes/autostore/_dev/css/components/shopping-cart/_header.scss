@@ -1,0 +1,105 @@
+.cart-header {
+    cursor: pointer;
+    margin: 0;
+}
+@include media-breakpoint-up(lg) {
+    .cart-header {
+        position: relative;
+        > .inner-wrapper {
+            display: block;
+            position: relative;
+            i {
+                font-size: 18px;
+                line-height: 1;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    #_desktop_cart {
+        position: static;
+        .divider {
+            padding: 0 4px;
+        }
+        .cart-products-count {
+            padding-right: 4px;
+        }
+    }
+    .cart-header {
+        > .inner-wrapper {
+            padding: 9px 18px;
+            i {
+                margin-right: 8px;
+            }
+            display: flex;
+            align-items: center;
+        }
+        span {
+            display: inline-block;
+            height: 15px;
+            line-height: 15px;
+        }
+    }
+    .cart-preview.active {
+        &:hover {
+            .cart-header {
+                > .inner-wrapper {
+                    background: rgba($clr-eight, .98);
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    #_mobile_cart {
+        flex: 1 0 0;
+    }
+    .cart-header {
+        position: relative;
+        padding-right: 10px;
+        > .inner-wrapper {
+            i {
+                font-size: 16px;
+                cursor: pointer;
+                width: 2em;
+                height: 2em;
+                background-color: $brand-primary;
+                color: $white;
+                text-shadow: 1px 1px rgba($black, .2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                transition: background-color .4s, color .4s;
+                &:hover {
+                    background-color: lighten($brand-primary, 5%);
+                }
+            }
+        }
+        .cart-products-count {
+            font-size: 10px;
+            line-height: 16px;
+            position: absolute;
+            top: -5px;
+            left: 21px;
+            display: block;
+            min-width: 16px;
+            height: 16px;
+            text-align: center;
+            color: $black;
+            border-radius: 50%;
+            background: $white;
+        }
+    }
+}
+@include media-breakpoint-down(xs) {
+    .cart-header {
+        > .inner-wrapper {
+            i {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

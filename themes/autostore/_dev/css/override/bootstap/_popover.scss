@@ -1,0 +1,17 @@
+.popover-content {
+	.table, td {
+		border: none;
+		padding: 0;
+	}
+	td {
+		font-size: 14px;
+		font-style: italic;
+	}
+	tr {
+		cursor: pointer;
+	}
+}
+.popover-title {
+	font-size: 15px;
+	font-weight: 700;
+}

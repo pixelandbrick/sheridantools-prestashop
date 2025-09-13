@@ -1,0 +1,33 @@
+.single {
+	.blog_post {
+		.post_thumbnail {
+			img {
+				width: auto;
+			}
+		}
+	}
+	.blog_post_content_top {
+		margin-bottom: 20px;
+	}
+	.post_meta {
+		margin-bottom: 20px;
+	}
+	.post_title {
+		font-size: 28px;
+	}
+	.post_content {
+		text-align: justify;
+		line-height: 1.8;
+	}
+}
+.comment_list {
+	padding: 0;
+	list-style: none;
+}
+@include media-breakpoint-down(xs) {
+	.single {
+		.post_title {
+			font-size: 24px;
+		}
+	}
+}

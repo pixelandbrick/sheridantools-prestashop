@@ -1,0 +1,15 @@
+.price {
+	font-size: 18px;
+	color: $clr-six;
+}
+.regular-price {
+	color: $clr-six;
+	font-size: 14px;
+	letter-spacing: 0;
+	text-decoration: line-through;
+	padding-right: 5px;
+	~ .price {
+		color: inherit;
+		font-weight: 700;
+	}
+}

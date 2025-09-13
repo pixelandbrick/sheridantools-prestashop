@@ -1,0 +1,32 @@
+//main meny
+@include media-breakpoint-up(lg) {
+    .lang-rtl{
+        .top-menu{
+            &[data-depth="1"]{
+                > li{
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .lang-rtl{
+        .menu-thumbnails{
+            padding: 0 0 0 15px;
+        }
+        .top-menu{
+            .dropdown-item{
+                padding-right: 20px;
+            }
+            .navbar-toggler{
+                right: auto;
+                left: 0;
+            }
+            .submenu{
+                padding-left: 0;
+                padding-right: 20px;
+            }
+        }
+    }
+}

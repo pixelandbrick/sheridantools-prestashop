@@ -1,0 +1,90 @@
+@import "~bootstrap/scss/_mixins.scss";
+@import "../partials/_variables";
+
+@include media-breakpoint-up(lg) {
+	.language-selector, .currency-selector {
+	    color: inherit;
+	    text-transform: uppercase;
+	    padding: 12px $grid-gutter-width-base/2;
+	    i {
+		    font-size: 9px;
+		    padding-left: 5px;
+	    }
+		.dropdown-menu {
+			background: rgba($clr-eight, .98);
+			border: none;
+			color: rgba($white, .5);
+			left: 0;
+			max-height: 370px;
+			li {
+				> a {
+					border: none;
+					padding: 7px 15px;
+				}
+			}
+		}
+		.expand-more {
+			text-transform: uppercase;
+			cursor: pointer;
+			color: inherit;
+		}
+		> a {
+			cursor: pointer;
+		}
+		&.show {
+			background: rgba($clr-eight, .98);
+		}
+	}
+	.language-selector {
+		&:after {
+			content: '';
+		    border-right: 1px solid rgba($white, .2);
+		    height: 21px;
+		    display: block;
+		    position: absolute;
+		    right: 0;
+		    top: 50%;
+		    transform: translate(0, -50%);
+		}
+		.lang-flag {
+		    display: inline-block;
+		    vertical-align: -1px;
+		    height: auto;
+		    max-width: 16px;
+		    margin-right: 3px;
+		}
+		&.show {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+    #_mobile_language_selector, #_mobile_currency_selector{
+        margin-right: 15px;
+    }
+    .language-selector,.currency-selector {
+        display: flex;
+        color: inherit;
+        select {
+            height: auto!important;
+            background-color: transparent;
+            background-image: none;
+            color: inherit;
+            padding: 0;
+            text-transform: uppercase;
+            font-size: inherit;
+            line-height: 1;
+            margin-left: 5px;
+            &:hover, &:focus {
+                color: $brand-primary;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xs) {
+    #_mobile_language_selector, #_mobile_currency_selector {
+        margin-right: 10px;
+    }
+}

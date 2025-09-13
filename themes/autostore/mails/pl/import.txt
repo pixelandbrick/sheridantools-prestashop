@@ -1,0 +1,11 @@
+{shop_url}
+
+Witaj {firstname} {lastname},
+
+Import finished
+
+Twój plik {filename} został poprawnie zaimportowany do Twojego sklepu.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)

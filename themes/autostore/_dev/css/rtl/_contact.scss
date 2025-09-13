@@ -1,0 +1,22 @@
+//header
+.lang-rtl {
+	#_desktop_contact_link {
+		.header__contact__item {
+			i {
+				margin: 0 0 0 8px;
+			}
+		}
+	}
+}
+//footer
+.lang-rtl {
+	.block-contact {
+		li {
+			padding: 0 32px 0 0;
+			&:before {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+}

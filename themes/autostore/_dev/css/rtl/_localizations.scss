@@ -1,0 +1,18 @@
+@include media-breakpoint-up(lg) {
+	.lang-rtl {
+		.language-selector, .currency-selector {
+			i {
+				padding: 0 0 0 5px;
+			}
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	.lang-rtl {
+		.language-selector, .currency-selector{
+			select{
+				padding-right: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.products-block {
+	position: relative;
+	.bx-wrapper {
+		position: static;
+		.bx-controls-direction {
+			position: absolute;
+			top: 2px;
+			right: $grid-gutter-width-base/2;
+			a {
+				display: inline-block;
+				position: static;
+				margin: 0;
+				font-size: 22px;
+				font-weight: 700;
+				line-height: 20px;
+				color: $clr-fifteen;
+				&:before {
+					color: inherit;
+					font-family: $first-icon-font;
+					font-size: inherit;
+					line-height: inherit;
+					padding: 0;
+				}
+				&:hover {
+					color: $clr-one;
+				}
+			}
+			.bx-next {
+				&:before {
+					content: '\e313';
+				}
+			}
+			.bx-prev {
+				color: $clr-one;
+				&:before {
+					content: '\e316';
+				}
+			}
+		}
+	}
+}

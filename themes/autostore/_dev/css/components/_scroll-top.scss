@@ -1,0 +1,64 @@
+@import "~bootstrap/scss/_mixins.scss";
+@import "../partials/_variables";
+
+
+.btn-to-top{
+	background: $brand-primary;
+	bottom: 90px;
+	color: $white;
+	cursor: pointer;
+	font-family: $first-icon-font;
+	font-size: 22px;
+	height: 40px;
+	line-height: 40px;
+	position: fixed;
+	right: 30px;
+	text-align: center;
+	width: 40px;
+	z-index: 2;
+	transition: background .4s ease;
+	border-radius: 50%;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border: 2px solid lighten($brand-primary, 10%);
+		border-radius: 50%;
+		opacity: 0;
+		transition: .4s transform, .4s opacity;
+        transform: scale(1.5);
+        will-change: transform, opacity;
+	}
+	&:before {
+		content: '\E316';
+	}
+	&:hover {
+		background: lighten($brand-primary, 10%);
+		&:after {
+			transform: scale(1.23);
+			opacity: 1;
+		}
+	}
+	&:active{
+		background: darken($brand-primary, 5%);
+		&:after {
+			border-color: darken($brand-primary, 5%);
+			transform: scale(1.35);
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	.btn-to-top {
+		right: 40px;
+		bottom: 70px;
+	}
+}
+@include media-breakpoint-down(xs) {
+	.btn-to-top {
+		right: 15px;
+		bottom: 30px;
+	}
+}

@@ -1,0 +1,13 @@
+.lang-rtl {
+	.input-group {
+		.form-control {
+			border-left-width: 0;
+			border-right-width: 2px;
+		}
+		.input-group-btn {
+			> .btn {
+				border-radius: 35px 0 0 35px;
+			}
+		}
+	}
+}

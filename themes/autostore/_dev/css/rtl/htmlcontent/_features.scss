@@ -1,0 +1,9 @@
+@include media-breakpoint-down(xs) {
+	.lang-rtl {
+		.feature-item {
+			.description {
+				padding: 0 20px 0 0;
+			}
+		}
+	}
+}

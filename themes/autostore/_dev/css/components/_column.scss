@@ -1,0 +1,77 @@
+@import "~bootstrap/scss/_mixins.scss";
+@import "../partials/_variables";
+
+.sidebar {
+	font-size: 14px;
+	> div, > section{
+		margin-bottom: 40px;
+	}
+	.h6 {
+		display: block;
+	    font-size: 24px;
+    	font-weight: 700;
+	    text-transform: uppercase;
+    	margin-bottom: 23px;
+	}
+	.btn {
+		font-size: 12px;
+		margin-top: 20px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.column-block {
+		position: relative;
+		.h6 {
+			border-bottom: 1px solid $clr-three;
+			padding: 10px 0;
+			margin-bottom: 0;
+		}
+	}
+	.sidebar {
+		> div, > section{
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.column-block {
+			margin: 0;
+		}
+		.h6 {
+			font-size: 17px;
+			position: relative;
+			cursor: pointer;
+			&:after{
+				font-family: $first-icon-font;
+				content: '\E313';
+				position: absolute;
+				right: 10px;
+				font-size: 18px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			&.active {
+				&:after {
+					content: '\E316';
+				}
+			}
+		}
+		.toggle-block {
+			background: $white;
+			opacity: 0;
+			visibility: hidden;
+		    transition: opacity .3s, transform .3s,visibility .3s;
+		    will-change: transform;
+		    transform: translateY(-50px);
+		    position: absolute;
+		    width: 100%;
+		}
+		.open {
+			.toggle-block {
+				opacity: 1;
+		    	transform: translateY(0);
+				visibility: visible;
+				position: static;
+			}
+		}
+	}
+}

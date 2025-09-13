@@ -1,0 +1,183 @@
+.top-menu a {
+  white-space: normal;
+}
+@include media-breakpoint-up(lg) {
+    .hide-bar {
+        .top-menu {
+            .sub-menu {
+                max-height: calc(100vh - 70px);
+            }
+        }
+    }
+    .top-menu {
+        margin-bottom: 0;
+        &[data-depth="0"] {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        .collapse {
+            display: inherit;
+        }
+        .sub-menu {
+            a {
+                color: inherit;
+                font-weight: inherit;
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+        }
+        .popover {
+            max-width: inherit;
+        }
+        .sub-menu {
+            font-size: 13px;
+            color: rgba($white, .7);
+            border: none;
+            padding: 38px 0 28px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            background: rgba($clr-eight, .98);
+            border-radius: 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translate(0, 20px);
+            transition: transform .5s, opacity .5s, visibility .5s;
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-height: calc(100vh - 117px);
+            box-shadow: 0px 2px 6px 0px rgba($black, .1);
+            margin-top: -12px;
+            .inner-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                width: 960px;
+                margin: 0 auto;
+                > .top-menu{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex: 5 0 56%;
+                }
+            }
+        }
+        &[data-depth="0"]{
+            > li {
+                &:hover{
+                    .sub-menu{
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translate(0, 0);
+                    }
+                }
+            }
+        }
+        &[data-depth="1"]{
+            > li {
+                padding: 0 12px 0 0;
+                min-width: 20%;
+                max-width: 20%;
+                margin-bottom: 45px;
+                flex: 1;
+                > a {
+                    color: $white;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        &[data-depth="2"]{
+            margin-top: 19px;
+            a {
+                display: block;
+                margin-bottom: 14px;
+            }
+            ul {
+                padding-left: 15px;
+            }
+        }
+        &.has-thumbnails {
+            > li {
+                flex: auto;
+                min-width: 50%;
+                max-width: 50%;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    .top-menu{
+        .sub-menu{
+            .inner-wrapper{
+                width: 1140px;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .top-menu{
+        &[data-depth="0"]{
+            > li{
+                padding: 0;
+            }
+        }
+        li {
+            display: block;
+        }
+        .dropdown-item{
+            color: inherit;
+            padding: 10px 0 10px 20px;
+            white-space: normal;
+            text-transform: uppercase;
+            font-size: 13px;
+            border-bottom: 1px solid rgba($white, .5);
+            position: relative;
+        }
+        .navbar-toggler{
+            color: inherit;
+            padding: 0;
+            display: block;
+            width: 100%;
+            height: 40px;
+            line-height: 35px;
+            text-align: right;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding-right: 15px;
+            cursor: pointer;
+            .remove{
+                display: none;
+            }
+            &[aria-expanded=true] {
+                .add {
+                    display: none;
+                }
+                .remove {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .sub-menu{
+        background: none;
+        border: none;
+        display: block;
+        position: static;
+        max-width: none;
+        &.collapse {
+            display: none;
+            &.show {
+                display: block;
+            }
+        }
+    }
+    .submenu {
+        padding-left: 20px;
+        .dropdown-item {
+            padding-left: 0;
+        }
+    }
+}

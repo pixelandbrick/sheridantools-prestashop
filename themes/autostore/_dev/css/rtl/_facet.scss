@@ -1,0 +1,23 @@
+.lang-rtl {
+	#search_filters {
+		.select-title {
+		    padding: 0 10px 0 45px;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	.lang-rtl {
+		#search_filter_controls {
+			#_mobile_search_filters_clear_all {
+				margin-right: 0;
+				margin-left: 5px;
+			}
+		}
+		#search_filter_controls {
+			.ok {
+				margin-left: 0;
+				margin-right: 5px;
+			}
+		}
+	}
+}

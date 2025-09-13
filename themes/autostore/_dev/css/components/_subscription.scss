@@ -1,0 +1,59 @@
+@import "~bootstrap/scss/_mixins.scss";
+@import "../partials/_variables";
+
+
+.block_newsletter {
+	.input-wrapper {
+		position: relative;
+	}
+	.form-control {
+		font-size: inherit;
+		font-weight: 300;
+		background: transparent;
+		color: rgba($white, .7);
+		height: 48px;
+		border: 1px solid rgba($white, .3);
+		padding: 5px 52px 5px 25px;
+	    border-radius: 35px;
+		transition: .4s border-color, .4s color;
+		&::placeholder {
+			color: inherit;
+		}
+		&:focus {
+			border-color: $brand-primary;
+			color: $brand-primary;
+		}
+	}
+	.btn-submit {
+		outline: none;
+		width: 48px;
+		height: 100%;
+		padding: 0;
+		font-size: 15px;
+		font-weight: 700;
+		position: absolute;
+		top: 0;
+		right: 0;
+		&:before {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		span {
+			display: none;
+		}
+	}
+}
+@include media-breakpoint-down(md) {
+	.footer-three {
+		.block_newsletter {
+			padding: 10px 0;
+		}
+	}
+}
+@include media-breakpoint-down(xs) {
+	.block_newsletter {
+	}
+}
+
+

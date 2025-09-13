@@ -1,0 +1,78 @@
+.drow-down-wrapper{
+	position: relative;
+	display: inline-block;
+}
+.dropdown {
+	color: inherit;
+	.expand-more {
+		color: $gray-darker;
+		cursor: pointer;
+		user-select: none;
+	}
+	.active {
+		max-height: 200px;
+		overflow-y: hidden;
+		visibility: visible;
+	}
+	select {
+		-moz-appearance: none;
+		border: 0 none;
+		outline: 0 none;
+		color: $gray-darker;
+		background: white;
+	}
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+	background: none;
+	text-decoration: none;
+	color: $brand-primary;
+}
+
+.dropdown-menu {
+	background: $white;
+	border-radius: 0;
+	border: 1px solid $clr-eleven;
+	display: block!important;
+	min-width: 0;
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(0, -40px);
+	transition: visibility 0.25s, opacity 0.25s, transform 0.25s;
+	padding: 0;
+	white-space: nowrap;
+	max-width: 240px;
+	min-width: 100%;
+	text-align: inherit;
+    max-height: 352px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 15px;
+	> a, li > a {
+		color: inherit;
+		display: block;
+		padding: 7px 10px;
+		font-size: 12px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		border-bottom: 1px solid $clr-eleven;
+		&:hover{
+			background: $brand-primary;
+			color: $white;
+		}
+	}
+	> a:last-child, li:last-child > a{
+		border-bottom-width: 0;
+	}
+}
+.show{
+	> .dropdown-menu{
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0, -1px);
+	}
+}
+.popover {
+	font-family: inherit;
+}

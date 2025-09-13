@@ -1,0 +1,17 @@
+{shop_url}
+
+Hola {firstname} {lastname},
+
+Message from customer
+
+Ha recibido un mensaje respecto al pedido con la referencia: {order_name}.
+
+Cliente: {firstrname} {lastname} ({email})
+
+Mensaje del cliente:
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)

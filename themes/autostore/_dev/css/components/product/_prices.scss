@@ -1,0 +1,36 @@
+.product-prices{
+    border-top: 1px solid $clr-three;
+    border-bottom: 1px solid $clr-three;
+    margin: 30px 0 0;
+    padding: 15px 0 6px;
+	> .product-discount,> .product-price{
+		display: inline-block;
+	    vertical-align: middle;
+		margin: 0;
+	}
+	.current-price{
+		> .price {
+			color: inherit;
+			font-size: 22px;
+			font-weight: 700;
+		    vertical-align: middle;
+		}
+		.discount {
+		    background: red;
+		    color: $white;
+		    display: inline-block;
+		    vertical-align: middle;
+		    font-size: 14px;
+		    line-height: 1;
+		    padding: 6px 10px;
+		    margin-left: 5px;
+		}
+	}
+	.product-discount {
+		.regular-price {
+			font-size: 22px;
+			position: relative;
+			padding-right: 8px;
+		}
+	}
+}

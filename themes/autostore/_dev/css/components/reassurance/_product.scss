@@ -1,0 +1,111 @@
+#block-reassurance {
+    margin-top: 30px;
+    img {
+        vertical-align: top;
+        max-width: 60px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+    li {
+        padding: 0 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .block-reassurance-item {
+        padding: 15px 20px;
+        border: 2px solid $brand-primary;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        text-transform: uppercase;
+        font-family: $second-font;
+    }
+    span {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 3px 0 0 10px;
+        margin: 0;
+        vertical-align: top;
+        line-height: 1.5;
+    }
+}
+//checkout page
+.page-order, .page-cart {
+    #block-reassurance {
+        margin-top: 10px;
+    }
+}
+//max 991
+@include media-breakpoint-between(sm, md) {
+    .page-order, .page-cart {
+        #block-reassurance {
+            li {
+                width: 33.333%;
+            }
+        }
+    }
+}
+
+//new version
+
+.blockreassurance_product {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    .block-icon {
+        flex: 0 0 40px;
+        max-width: 40px;
+    }
+    img, svg  {
+        max-width: 100%;
+        height: auto;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    .reass-item {
+        width: 100%;
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    .item-link {
+        padding: 10px 18px;
+        border: 2px solid $brand-primary;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .item-descr {
+        font-size: 14px;
+        padding-left: 12px;
+        line-height: 1.5;
+    }
+    .block-title {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+    }
+}
+//checkout page
+.page-order, .page-cart {
+    .blockreassurance_product {
+        margin-top: 10px;
+    }
+}
+//max 991
+@include media-breakpoint-between(sm, md) {
+    .page-order, .page-cart {
+        .blockreassurance_product {
+            .reass-item {
+                width: (100%/3);
+                
+            }
+        }
+    }
+}
+

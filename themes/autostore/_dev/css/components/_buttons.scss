@@ -1,0 +1,133 @@
+@import "~bootstrap/scss/_mixins.scss";
+@import "../partials/_variables";
+
+button{
+    cursor: pointer;
+    outline: none!important;
+}
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
+    background: transparent;
+    border: 1px solid $brand-primary;
+    color: $brand-primary;
+    border-radius: 35px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    outline: none;
+    padding: 22px 32px;
+    padding: 1.4em 2em;
+    position: relative;
+    line-height: 1.25;
+    cursor: pointer;
+    white-space: normal;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 0;
+    overflow: hidden;
+    &:after {
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background: $brand-primary;
+        transform: translate(-100%, 0);
+        transition: .5s transform, .5s background;
+    }
+    i {
+        line-height: 1;
+    }
+    &:hover, &:focus{
+        background: transparent;
+        border-color: $brand-primary;
+        color: $white;
+        outline: none!important;
+        &:after {
+            transform: translate(0, 0);
+        }
+    }
+    &:active {
+        background: transparent;
+        border-color: lighten($brand-primary, 10%);
+        color: $white;
+        outline: none!important;
+        &:after {
+            background: lighten($brand-primary, 10%);
+        }
+    }
+    &.fill {
+        background: $brand-primary;
+        color: $white;
+        &:hover {
+            background: lighten($brand-primary, 10%);
+            border-color: lighten($brand-primary, 10%);
+            color: $white;
+        }
+        &:active {
+            background: darken($brand-primary, 5%);
+            border-color: darken($brand-primary, 5%);
+            color: $white;
+        }
+        &:after {
+            display: none;
+        }
+    }
+    &.big {
+        font-size: 15px;
+        padding: 1.4em 2.6em;
+    }
+}
+input[type="button"], input[type="submit"] {
+    &.btn {
+        background: $brand-primary;
+        color: $white;
+        &:hover {
+            background: lighten($brand-primary, 10%);
+            border-color: lighten($brand-primary, 10%);
+            color: $white;
+        }
+        &:active {
+            background: darken($brand-primary, 5%);
+            border-color: darken($brand-primary, 5%);
+            color: $white;
+        }
+    }
+}
+
+.btn {
+    &.disabled, &:disabled {
+        border-color: $brand-primary;
+        background: transparent;
+        pointer-events: none;
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .btn,
+    .btn-primary,
+    .btn-secondary,
+    .btn-tertiary {
+        font-size: 12px;
+        padding-left: 1.6em;
+        padding-right: 1.6em;
+        &.big {
+            font-size: 12px;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+    }
+}
+.add-cart {
+    &.disabled {
+        pointer-events: none;
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,10 @@
+.lang-rtl {
+	.products-block {
+		.bx-wrapper {
+			.bx-controls-direction {
+				right: auto;
+				left: $grid-gutter-width-base/2;
+			}
+		}
+	}
+}

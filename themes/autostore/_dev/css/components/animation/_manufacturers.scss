@@ -1,0 +1,13 @@
+.manufacturer-items {
+	> a{
+		display: block;
+	    transition: filter .4s, transform .4s, opacity .4s;
+	    will-change: filter, opacity, transform;
+	    &:hover {
+	    	filter: grayscale(0);
+		    opacity: 1;
+    		filter: grayscale(100%);
+    		opacity: 0.5;
+	    }
+	}
+}

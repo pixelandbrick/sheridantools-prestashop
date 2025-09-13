@@ -1,0 +1,309 @@
+@import "~bootstrap/scss/_mixins.scss";
+@import "../partials/_variables";
+
+
+.js-cart-line-product-quantity {
+    display: none!important;
+    .bootstrap-touchspin &{
+        display: block !important;
+    }
+}
+.product-line-grid{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .product-price {
+        color: inherit;
+        strong {
+            font-weight: 400;
+        }
+    }
+}
+.cart-grid {
+    margin-bottom: 16px;
+    .cart-grid-body {
+        .cart-container{
+            border: none;
+        }
+        .card-block{
+            border: none;
+            background: $black;
+            color: $white;
+            padding: 14px 16px;
+            .h1 {
+                font-size: 20px;
+            }
+        }
+    }
+    .cart-container{
+        margin-bottom: 20px;
+    }
+}
+
+.cart-items {
+    margin: 10px 0 0;
+    .row {
+        align-items: center;
+    }
+}
+.cart-summary-subtotals-container {
+    padding: 0;
+}
+.cart-summary-line {
+    clear: both;
+    margin-bottom: 7px;
+    .label {
+        padding-left: 0;
+        font-weight: 700;
+        white-space: inherit;
+        padding-right: 10px;
+        text-transform: uppercase;
+    }
+    .value {
+        color: $gray-darker;
+    }
+    &.cart-summary-subtotals {
+        .label,
+        .value {
+          
+        }
+    }
+}
+
+
+/** CART BODY **/
+
+.cart-grid-body {
+    .cart-item{
+        border: 1px solid $clr-three;
+        padding: 12px 7px;
+        border-radius: 4px;
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+    a.label {
+        &:hover {
+            color: $brand-primary;
+        }
+    }
+    .card-block {
+        padding: 16px;
+        h1 {
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    }
+    hr {
+        margin: 0;
+        display: none;
+    }
+    
+}
+
+
+/** CART RIGHT **/
+
+.cart-grid-right {
+    hr {
+        margin: 0;
+    }
+    .promo-discounts {
+        margin-bottom: 0;
+        .cart-summary-line {
+            .label {
+                color: $gray-dark;
+                .code {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.block-promo {
+    background-color: $white;
+    .promo-code {
+        padding: 1.25rem;
+        border-top: 1px solid $clr-three;
+        border-bottom: 1px solid $clr-three;
+        form {
+            position: relative;
+        }
+        .alert-danger {
+            position: relative;
+            margin-top: 20px;
+            background: $brand-danger;
+            color: white;
+            display: none;
+            &::after {
+                bottom: 100%;
+                left: 10%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-bottom-color: $brand-danger;
+                border-width: 10px;
+                margin-left: -10px;
+            }
+        }
+    }
+    .promo-input {
+        padding: 0 110px 0 12px;
+        border: 1px solid $clr-three;
+        height: 38px;
+        display: block;
+        width: 100%;
+        &:focus {
+            border-color: $brand-primary;
+            outline: none;
+        }
+        + button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            padding: 10.5px 12px;
+            font-size: 12px;
+            max-width: 110px;
+            border-radius: 0;
+        }
+    }
+    .cart-summary-line .label,
+    .promo-name {
+        color: $brand-warning;
+        a {
+            font-weight: normal;
+            color: $gray-darker;
+            display: inline-block;
+        }
+    }
+    .promo-code-button {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $brand-primary;
+        padding: 0 1.25rem;
+    }
+    &.promo-highlighted {
+        padding: 7px 1.25rem;
+        margin-bottom: 0;
+    }
+}
+
+/** CONTENT LEFT **/
+
+.product-line-grid-left {
+    img {
+        max-width: 100%;
+    }
+}
+
+
+/** CONTENT BODY **/
+
+.product-line-grid-body {
+    .regular-price {
+        vertical-align: middle;
+        padding-left: 0;
+    }
+    > .product-line-info {
+        margin-bottom: 5px;
+        .value {
+            color: $brand-primary;
+        }
+        > .label {
+            font-weight: 700;
+            padding: 0;
+            line-height: inherit;
+            text-align: left;
+            white-space: inherit;
+            color: inherit;
+        }
+        > .out-of-stock {
+            color: red;
+        }
+        > .available {
+            color: $brand-success;
+        }
+        > .unit-price-cart {
+            padding-left: 0.3125rem;
+            font-size: 0.875rem;
+            color: $gray-dark;
+        }
+        .discount {
+            background: $clr-seven;
+            color: $white;
+            display: inline-block;
+            padding: 5px;
+            font-size: 14px;
+            line-height: 1;
+        }
+        .product-discount, .current-price {
+            display: inline-block;
+        }
+        .current-price {
+            vertical-align: middle;
+        }
+    }
+}
+//max 991
+@include media-breakpoint-down(md) {
+    .cart-grid-right{
+        margin-top: 15px;
+    }
+}
+//max 768
+@include media-breakpoint-down(sm) {
+    .product-line-grid-right{
+        > .row{
+            align-items: center;
+        }
+        .col-md-10{
+            > .row{
+                align-items: center;
+            }
+        }
+    }
+    .cart-grid-body{
+        .card-block{
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm) {
+    .cart-grid-body{
+        .card-block{
+            h1{
+                font-size: 20px;
+            }
+        }
+    }
+    .product-line-grid{
+        img {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .bootstrap-touchspin {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        [class*="col-"]{
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+        .qty{
+            margin: 10px 0;
+        }
+        .cart-line-product-actions{
+            margin-top: 10px;
+        }
+    }
+}

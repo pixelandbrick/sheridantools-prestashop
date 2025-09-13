@@ -1,0 +1,107 @@
+.category-top-menu {
+    margin: 0;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        right: 0;
+        border-top: 1px solid $white;
+    }
+    ul {
+        margin: 0;
+    }
+    > li {
+        > .category-sub-menu {
+            border: 1px solid $clr-three;
+        }
+    }
+    li {
+        position: relative;
+        &[data-depth]{
+            a {
+                display: block;
+                font-size: 13px;
+                padding: 16px 27px 15px 20px;
+                position: relative;
+                &:after{
+                    border-bottom: 1px solid $clr-three;
+                    bottom: 0;
+                    content: '';
+                    position: absolute;
+                    left: 20px;
+                    right: 20px;
+                }
+            }
+        }
+        &[data-depth="0"] {
+            > a {
+                font-size: 14px;
+            }
+        }
+    }
+    .navbar-toggler, .arrows{
+        color: $clr-fifteen;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 4px;
+        cursor: pointer;
+        font-size: 21px;
+        padding: 0;
+        border: none;
+        width: 30px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        &:hover {
+            color: $black;
+        }
+        i {
+            font-size: inherit;
+        }
+    }
+    .collapse-icons {
+        &[aria-expanded="true"] {
+            .add{
+                display: none;
+            }
+            .remove {
+                display: block;
+            }
+        }
+        .remove {
+            display: none;
+        }
+    }
+    .arrows {
+        &[aria-expanded="true"] {
+            .arrow-down {
+                display: none;
+            }
+           .arrow-up {
+                display: block;
+            }
+        }
+        .arrow-up {
+            display: none;
+        }
+    }
+}
+
+/* Media */
+@include media-breakpoint-down(md) {
+    .block-categories {
+        .h6 {
+            &:after {
+                display: none;
+            }
+        }
+        .navbar-toggler,.arrows {
+            font-size: 14px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

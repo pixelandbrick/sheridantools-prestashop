@@ -1,0 +1,14 @@
+.lang-rtl {
+	.products-block {
+		.thumbnail-wrapper {
+			float: right;
+			padding: 0 0 0 10px;
+		}
+		.new, .online-only, .on-sale, .discount-percentage, .pack {
+			position: absolute;
+			left: auto;
+			right: 0;
+			border-radius: 20px 0 0 20px;
+		}
+	}
+}

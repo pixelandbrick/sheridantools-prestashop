@@ -1,0 +1,17 @@
+{shop_url}
+
+Witaj {firstname} {lastname},
+
+Message from customer
+
+Odebrano nową wiadomość dotyczącą zlecenia z adnotacją {order_name}.
+
+Klient: {firstrname} {lastname} ({email})
+
+Wiadomość klienta:
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](http://www.prestashop.com/)

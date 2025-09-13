@@ -1,0 +1,41 @@
+@import "~bootstrap/scss/_mixins.scss";
+@import "../partials/_variables";
+
+.manufacturers-home {
+	background-color: $clr-twenty-three;
+	margin-top: 115px;
+	padding: 7% 0;
+	.carousel-view {
+	    padding: 0 5%;
+	    white-space: nowrap;
+	    .manufacturer-items {
+	    	display: inline-block;
+	    	vertical-align: top;
+	    	white-space: normal;
+	    }
+	}
+	.manufacturer-items {
+		text-align: center;
+		img {
+			display: inline-block;
+		}
+	}
+}
+.owl-item {
+	.manufacturer-items {
+		width: 100%;
+	}
+}
+@include media-breakpoint-down(md) {
+	.manufacturers-home {
+		margin-top: 40px;
+		padding: 40px 0;
+	}
+}
+@include media-breakpoint-down(sm) {
+	.manufacturers-home {
+		.carousel-view {
+		    padding: 0;
+		}
+	}
+}

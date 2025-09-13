@@ -1,0 +1,100 @@
+/*menu horizontal*/
+@include media-breakpoint-up(lg) {
+    .main-menu{
+        position: static;
+        padding-left: 0;
+    }
+    .top-menu {
+        a {
+            display: inline-block;
+            width: auto;
+            padding: 0;
+        }
+        &[data-depth="0"]{
+            > li {
+                display: inline-block;
+                vertical-align: middle;
+                > a {
+                    color: inherit;
+                    position: relative;
+                    font-size: 12px;
+                    padding: 14px 1.5385em;
+                    padding: 14px 1.1em;
+                    position: relative;
+                    z-index: 0;
+                    &:before {
+                        content: '';
+                        top: 0;
+                        left: -1px;
+                        right: -1px;
+                        position: absolute;
+                        z-index: -1;
+                        height: 0;
+                        background: rgba($clr-eight, .98);
+                        opacity: 0;
+                        transition: .3s height, .3s opacity;
+                    }
+                    &:after {
+                        content: '';
+                        width: 2px;
+                        height: 2px;
+                        background: $white;
+                        position: absolute;
+                        top: 50%;
+                        right: -1px;
+                        transform: translate(0, -50%);
+                        transition: .3s opacity;
+                    }
+                }
+                &:hover {
+                    > a {
+                        color: $white;
+                        &:before {
+                            opacity: 1;
+                            height: 100%;
+                        }
+                        &:after {
+                            opacity: 0;
+                        }
+                    }
+                    .menu-line {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        .current {
+            .menu-line {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+                border-top: 2px solid $brand-primary;
+                width: calc(100% - 30px);
+                transition: .3s opacity;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(xl) {
+    .top-menu[data-depth="0"] {
+        > li {
+            > a {
+                font-size: 13px;
+                padding-left: 1.5385em;
+                padding-right: 1.5385em;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    .top-menu {
+        &[data-depth="0"]{
+            > li{
+                > a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
