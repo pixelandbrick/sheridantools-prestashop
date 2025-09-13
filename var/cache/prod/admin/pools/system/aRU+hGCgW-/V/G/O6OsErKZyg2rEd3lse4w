@@ -1,0 +1,53 @@
+<?php //PrestaShopBundle%255CEntity%255CShopUrl
+
+return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone ($p['Doctrine\\ORM\\Mapping\\UniqueConstraint'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\UniqueConstraint')),
+        clone $p['Doctrine\\ORM\\Mapping\\UniqueConstraint'],
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'indexes' => [
+                [
+                    $o[1],
+                ],
+            ],
+            'uniqueConstraints' => [
+                [
+                    $o[2],
+                    $o[3],
+                ],
+            ],
+            'name' => [
+                1 => 'id_shop',
+                'full_shop_url',
+                'full_shop_url_ssl',
+            ],
+            'columns' => [
+                1 => [
+                    'id_shop',
+                    'main',
+                ],
+                [
+                    'domain',
+                    'physical_uri',
+                    'virtual_uri',
+                ],
+                [
+                    'domain_ssl',
+                    'physical_uri',
+                    'virtual_uri',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[4],
+    ],
+    []
+)];

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/home2/sheridantools/dev.sheridantools.com/themes/autostore/templates/index.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="dd8c84ae3dc95566dc071d0effc40dd2">
+        <source>Our Products</source>
+        <target>Our Products</target>
+        <note>Line: 38</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

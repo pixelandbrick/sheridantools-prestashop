@@ -1,0 +1,96 @@
+<?php
+/* Smarty version 4.5.5, created on 2025-09-12 23:30:20
+  from 'module:ps_contactinfops_contactinforich.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.5.5',
+  'unifunc' => 'content_68c4e54cc594b1_18535688',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '628089b29e2c5fb69de1c5694b088f988b830ba7' => 
+    array (
+      0 => 'module:ps_contactinfops_contactinforich.tpl',
+      1 => 1581873634,
+      2 => 'module',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_68c4e54cc594b1_18535688 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<div class="contact-rich">
+  <h4><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Contact information','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+</h4>
+  <div class="block">
+    <div class="icon"><i class="material-icons">&#xE55F;</i></div>
+    <div class="data"><?php echo $_smarty_tpl->tpl_vars['contact_infos']->value['address']['formatted'];?>
+</div>
+  </div>
+  <?php if ($_smarty_tpl->tpl_vars['contact_infos']->value['phone']) {?>
+    <hr/>
+    <div class="block">
+      <div class="icon"><i class="material-icons">&#xE0CD;</i></div>
+      <div class="data">
+        <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Call us:','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+<br/>
+        <a href="tel:<?php echo htmlspecialchars((string) ($_smarty_tpl->tpl_vars['contact_infos']->value['phone']), ENT_QUOTES, 'UTF-8');?>
+"><?php echo htmlspecialchars((string) ($_smarty_tpl->tpl_vars['contact_infos']->value['phone']), ENT_QUOTES, 'UTF-8');?>
+</a>
+       </div>
+    </div>
+  <?php }?>
+  <?php if ($_smarty_tpl->tpl_vars['contact_infos']->value['fax']) {?>
+    <hr/>
+    <div class="block">
+      <div class="icon"><i class="material-icons">&#xE0DF;</i></div>
+      <div class="data">
+        <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Fax:','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+<br/>
+        <?php echo htmlspecialchars((string) ($_smarty_tpl->tpl_vars['contact_infos']->value['fax']), ENT_QUOTES, 'UTF-8');?>
+
+      </div>
+    </div>
+  <?php }?>
+  <?php if ((isset($_smarty_tpl->tpl_vars['display_email']->value))) {?>
+      <?php if ($_smarty_tpl->tpl_vars['contact_infos']->value['email'] && $_smarty_tpl->tpl_vars['display_email']->value) {?>
+        <hr/>
+        <div class="block">
+          <div class="icon"><i class="material-icons">&#xE158;</i></div>
+          <div class="data email">
+            <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email us:','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+<br/>
+           </div>
+           <a href="mailto:<?php echo htmlspecialchars((string) ($_smarty_tpl->tpl_vars['contact_infos']->value['email']), ENT_QUOTES, 'UTF-8');?>
+" target="_blank" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Contact us','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+">
+            <?php echo htmlspecialchars((string) ($_smarty_tpl->tpl_vars['contact_infos']->value['email']), ENT_QUOTES, 'UTF-8');?>
+</a>
+        </div>
+      <?php }?>
+  <?php } else { ?>
+      <?php if ($_smarty_tpl->tpl_vars['contact_infos']->value['email']) {?>
+        <hr/>
+        <div class="block">
+          <div class="icon"><i class="material-icons">&#xE158;</i></div>
+          <div class="data email">
+            <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Email us:','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+<br/>
+           </div>
+           <a href="mailto:<?php echo htmlspecialchars((string) ($_smarty_tpl->tpl_vars['contact_infos']->value['email']), ENT_QUOTES, 'UTF-8');?>
+" target="_blank" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Contact us','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+">
+              <?php echo htmlspecialchars((string) ($_smarty_tpl->tpl_vars['contact_infos']->value['email']), ENT_QUOTES, 'UTF-8');?>
+
+           </a>
+        </div>
+      <?php }?>
+  <?php }?>
+</div>
+
+
+<?php }
+}

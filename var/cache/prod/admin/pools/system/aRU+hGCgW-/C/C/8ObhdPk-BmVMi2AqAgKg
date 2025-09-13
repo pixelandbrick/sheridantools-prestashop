@@ -1,0 +1,3 @@
+<?php //PrestaShopBundle%255CEntity%255CMutatorType
+
+return [PHP_INT_MAX, []];

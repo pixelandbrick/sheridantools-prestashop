@@ -1,0 +1,98 @@
+<?php //is_granted%2528%2527read%2527%252C%2520request.get%2528%2527_legacy_controller%2527%2529%2529%252F%252Fauth_checker%257Cobject%257Crequest%257Crole_names%257Csubject%257Ctoken%257Ctrust_resolver%257Cuser
+
+return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Symfony\\Component\\ExpressionLanguage\\ParsedExpression'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\ParsedExpression')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\FunctionNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\FunctionNode')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\Node'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\Node')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\GetAttrNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\GetAttrNode')),
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\NameNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\NameNode')),
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'],
+        clone ($p['Symfony\\Component\\ExpressionLanguage\\Node\\ArgumentsNode'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\ExpressionLanguage\\Node\\ArgumentsNode')),
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'],
+        clone $p['Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode'],
+    ],
+    null,
+    [
+        'Symfony\\Component\\ExpressionLanguage\\Expression' => [
+            'expression' => [
+                'is_granted(\'read\', request.get(\'_legacy_controller\'))',
+            ],
+        ],
+        'Symfony\\Component\\ExpressionLanguage\\ParsedExpression' => [
+            'nodes' => [
+                $o[1],
+            ],
+        ],
+        'stdClass' => [
+            'nodes' => [
+                1 => [
+                    'arguments' => $o[2],
+                ],
+                [
+                    $o[3],
+                    $o[4],
+                ],
+                7 => [
+                    $o[8],
+                    $o[9],
+                ],
+            ],
+            'attributes' => [
+                1 => [
+                    'name' => 'is_granted',
+                ],
+                3 => [
+                    'value' => 'read',
+                ],
+                5 => [
+                    'name' => 'request',
+                ],
+                [
+                    'value' => 'get',
+                ],
+                8 => [
+                    'value' => 0,
+                ],
+                [
+                    'value' => '_legacy_controller',
+                ],
+            ],
+        ],
+        'Symfony\\Component\\ExpressionLanguage\\Node\\ConstantNode' => [
+            'isNullSafe' => [
+                3 => false,
+                6 => false,
+                8 => false,
+                false,
+            ],
+            'isIdentifier' => [
+                3 => false,
+                6 => true,
+                8 => false,
+                false,
+            ],
+        ],
+        'Symfony\\Component\\ExpressionLanguage\\Node\\ArrayNode' => [
+            'index' => [
+                7 => 0,
+            ],
+        ],
+    ],
+    $o[0],
+    [
+        -4 => [
+            'nodes' => [
+                'node' => $o[5],
+                'attribute' => $o[6],
+                'arguments' => $o[7],
+            ],
+            'attributes' => [
+                'type' => 2,
+                'is_null_coalesce' => false,
+                'is_short_circuited' => false,
+            ],
+        ],
+    ]
+)];

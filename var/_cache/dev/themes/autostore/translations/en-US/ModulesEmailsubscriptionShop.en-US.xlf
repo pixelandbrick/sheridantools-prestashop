@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/home2/sheridantools/dev.sheridantools.com/themes/autostore/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="b26917587d98330d93f87808fc9d7267">
+        <source>Subscribe</source>
+        <target>Subscribe</target>
+        <note>Line: 87</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

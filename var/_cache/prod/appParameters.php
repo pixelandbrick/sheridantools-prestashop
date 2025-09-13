@@ -1,0 +1,25 @@
+<?php return array (
+  'parameters' => 
+  array (
+    'database_host' => '127.0.0.1',
+    'database_port' => '',
+    'database_name' => 'sheridan_ps',
+    'database_user' => 'sheridan_ps',
+    'database_password' => '#HVDW7NSZdy{',
+    'database_prefix' => 'ps_',
+    'database_engine' => 'InnoDB',
+    'mailer_transport' => 'smtp',
+    'mailer_host' => '127.0.0.1',
+    'mailer_user' => NULL,
+    'mailer_password' => NULL,
+    'secret' => 'Xs5u7aEVmzkQbtEPgfrLr58nAUzr1V6upNkouNxFNTNau28XrwKSeQZS',
+    'ps_caching' => 'CacheMemcache',
+    'ps_cache_enable' => false,
+    'ps_creation_date' => '2020-02-05',
+    'locale' => 'en-US',
+    'use_debug_toolbar' => true,
+    'cookie_key' => 'byMvkE8VRYTamq2NHRODDQaNniZB0FNWExU2kMfpDn5qkeeT3HLRP2XR',
+    'cookie_iv' => '8jfsQCmG',
+    'new_cookie_key' => 'def000009b3fd36cf37173ea70ddd57446f7bfb5c645cb1cd8da20c7ad85c09bf332a1408643b603e900fefdf01e05bc1205ed3fd813b8636186290546bb5a92be8f401e',
+  ),
+);

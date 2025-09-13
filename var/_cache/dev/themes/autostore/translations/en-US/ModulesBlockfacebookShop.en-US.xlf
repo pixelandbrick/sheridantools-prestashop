@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/home2/sheridantools/dev.sheridantools.com/themes/autostore/modules/blockfacebook/views/templates/hook/blockfacebook.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="374fe11018588d3d27e630b2dffb7909">
+        <source>Follow us on Facebook</source>
+        <target>Follow us on Facebook</target>
+        <note>Line: 33</note>
+      </trans-unit>
+      <trans-unit id="8de7ca8d7cf80713e491b074d077159a">
+        <source>Quality Tools. Expert Training.</source>
+        <target>Quality Tools. Expert Training.</target>
+        <note>Line: 29</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

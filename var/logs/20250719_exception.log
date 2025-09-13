@@ -1,0 +1,1 @@
+*ERROR* 	v8.0.4	2025/07/19 - 12:00:38: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &#039;select (0x7570646174652070735f717569636b5f6163636573735f6c616e6720736574206e616d&#039; at line 1 at line 151 in file classes/db/DbPDO.php

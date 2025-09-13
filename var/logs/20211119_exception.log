@@ -1,0 +1,1 @@
+*ERROR* 	v1.7.6.4	2021/11/19 - 05:39:36: Link to database cannot be established: SQLSTATE[HY000] [1203] User sheridan_ps already has more than 'max_user_connections' active connections at line 127 in file classes/db/DbPDO.php

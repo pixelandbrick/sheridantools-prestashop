@@ -1,0 +1,25 @@
+*ERROR* 	v8.0.4	2025/04/06 - 22:42:01: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away at line 151 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:42:01: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away at line 151 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:48:15: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:53:25: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:55:21: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:55:55: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:57:23: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:57:23: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:57:23: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:57:23: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:57:23: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:57:23: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:57:23: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:57:23: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:57:23: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:57:23: Link to database cannot be established: SQLSTATE[08004] [1040] Too many connections at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:59:45: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:59:45: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:59:46: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:59:46: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:59:46: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:59:46: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:59:46: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 22:59:46: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 119 in file classes/db/DbPDO.php
+*ERROR* 	v8.0.4	2025/04/06 - 23:01:21: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 119 in file classes/db/DbPDO.php

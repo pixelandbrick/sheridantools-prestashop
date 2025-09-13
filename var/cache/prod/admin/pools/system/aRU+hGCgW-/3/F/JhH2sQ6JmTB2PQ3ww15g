@@ -1,0 +1,30 @@
+<?php //PrestaShopBundle%255CEntity%255CEmployee%255CEmployee%2524sessions
+
+return [PHP_INT_MAX, static fn () => \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\OneToMany'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\OneToMany')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'mappedBy' => [
+                'employee',
+            ],
+            'targetEntity' => [
+                'PrestaShopBundle\\Entity\\Employee\\EmployeeSession',
+            ],
+            'cascade' => [
+                [
+                    'persist',
+                ],
+            ],
+            'orphanRemoval' => [
+                true,
+            ],
+        ],
+    ],
+    [
+        $o[0],
+    ],
+    []
+)];

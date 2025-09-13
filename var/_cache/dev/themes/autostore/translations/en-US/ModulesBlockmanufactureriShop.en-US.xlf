@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="/home2/sheridantools/dev.sheridantools.com/themes/autostore/modules/blockmanufactureri/views/templates/front/blockmanufactureri.tpl" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="2377be3c2ad9b435ba277a73f0f1ca76">
+        <source>Manufacturers</source>
+        <target>Manufacturers</target>
+        <note>Line: 30</note>
+      </trans-unit>
+      <trans-unit id="8b88a2c263402b677d3a664bf4524450">
+        <source>Featured manufacturers</source>
+        <target>Featured manufacturers</target>
+        <note>Line: 30</note>
+      </trans-unit>
+      <trans-unit id="3488fee07c31e21515734aaac30070b3">
+        <source>Curabitur consectetur augue nisi, viverra dapibus ligula sodales sed. Donec rhoncus, nisi non rutrum lobortis, magna eros mattis metus, ut egestas nisl arcu ac mi.</source>
+        <target>Curabitur consectetur augue nisi, viverra dapibus ligula sodales sed. Donec rhoncus, nisi non rutrum lobortis, magna eros mattis metus, ut egestas nisl arcu ac mi.</target>
+        <note>Line: 32</note>
+      </trans-unit>
+      <trans-unit id="49fa2426b7903b3d4c89e2c1874d9346">
+        <source>More about</source>
+        <target>More about</target>
+        <note>Line: 39</note>
+      </trans-unit>
+      <trans-unit id="1c407c118b89fa6feaae6b0af5fc0970">
+        <source>No manufacturer</source>
+        <target>No manufacturer</target>
+        <note>Line: 49</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
