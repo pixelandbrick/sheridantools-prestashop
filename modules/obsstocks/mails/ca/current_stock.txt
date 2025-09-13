@@ -1,0 +1,1 @@
+Se ha detectado stock bajo mínimos, consultar fichero CSV adjunto.

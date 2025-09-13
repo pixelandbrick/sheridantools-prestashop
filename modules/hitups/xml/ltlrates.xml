@@ -1,0 +1,83 @@
+<root>
+   <FreightRateRequest>
+      <AlternateRateOptions>
+         <Code>3</Code>
+      </AlternateRateOptions>
+      <Commodity>
+         <Description>FRS-Freight</Description>
+         {dimension}
+         <FreightClass>60</FreightClass>
+         <NumberOfPieces>1</NumberOfPieces>
+         <PackagingType>
+            <Code>PLT</Code>
+         </PackagingType>
+         {weight}
+      </Commodity>
+      <DensityEligibleIndicator />
+      <GFPOptions>
+         <GPFAccesorialRateIndicator />
+      </GFPOptions>
+      <PaymentInformation>
+         <Payer>
+            <AccountType>1</AccountType>
+            <Address>
+               <AddressLine>{to_address}</AddressLine>
+               <City>{to_city}</City>
+               <CountryCode>{to_country}</CountryCode>
+               <PostalCode>{to_postal}</PostalCode>
+               <StateProvinceCode>{to_state}</StateProvinceCode>
+            </Address>
+            <AttentionName>Test Shipper</AttentionName>
+            <EMailAddress>gcc0htq@ups.com</EMailAddress>
+            <Name>Test US Shipper</Name>
+            <Phone>
+               <Extension>4444</Extension>
+               <Number>4444444444</Number>
+            </Phone>
+            <ShipperNumber>AT0123</ShipperNumber>
+         </Payer>
+         <ShipmentBillingOption>
+            <Code>10</Code>
+         </ShipmentBillingOption>
+      </PaymentInformation>
+      <PickupRequest>
+         <PickupDate>{pick}</PickupDate>
+      </PickupRequest>
+      <Service>
+         <Code>308</Code>
+      </Service>
+      <ShipFrom>
+         <Address>
+            <AddressLine>123 Lane</AddressLine>
+            <City>{from_city}</City>
+            <CountryCode>{from_country}</CountryCode>
+            <PostalCode>{from_postal}</PostalCode>
+            <ResidentialAddressIndicator />
+            <StateProvinceCode>{from_state}</StateProvinceCode>
+         </Address>
+         <AttentionName>{from_name}</AttentionName>
+         <EMailAddress>gcc0htq@ups.com</EMailAddress>
+         <Name>{from_name}</Name>
+         <Phone>
+            <Extension></Extension>
+            <Number>4444444444</Number>
+         </Phone>
+      </ShipFrom>
+      <ShipTo>
+         <Address>
+            <AddressLine>555 Main St</AddressLine>
+            <City>{from_city}</City>
+            <CountryCode>{from_country}</CountryCode>
+            <PostalCode>{from_postal}</PostalCode>
+            <StateProvinceCode>{from_state}</StateProvinceCode>
+         </Address>
+         <AttentionName>{from_name}</AttentionName>
+         <Name>{from_name}</Name>
+         <Phone>
+            <Number>8459865555</Number>
+         </Phone>
+      </ShipTo>
+      <ShipperNumber>{from_acc}</ShipperNumber>
+      <TimeInTransitIndicator />
+   </FreightRateRequest>
+</root>
