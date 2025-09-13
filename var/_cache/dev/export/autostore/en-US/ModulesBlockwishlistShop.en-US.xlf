@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin143k7mgdz" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="d025259319054206be54336a00defe89">
+        <source>Do you really want to delete this wishlist ?</source>
+        <target>Do you really want to delete this wishlist?</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

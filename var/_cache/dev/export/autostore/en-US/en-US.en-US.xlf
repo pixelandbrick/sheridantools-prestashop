@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin143k7mgdz" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="13ea583f6474cdce6c0c9b289b652ffe">
+        <source>Testimonials</source>
+        <target>Testimonials</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="02ff60b03d238e69f34e16a86e7957de">
+        <source>Our customers love us</source>
+        <target>Our customers love us</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
